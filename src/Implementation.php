@@ -21,8 +21,7 @@ class Implementation implements CryptoInterface
             self::checkSupport();
         }
 
-        if (!isset(static::$supportedCiphers[$cipher],
-                   static::$supportedModes[$mode])) {
+        if (!isset(static::$supportedCiphers[$cipher], static::$supportedModes[$mode])) {
             throw new \Exception('Unsupported cipher or mode');
         }
 

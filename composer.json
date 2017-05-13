@@ -19,6 +19,7 @@
     },
     "require": {
         "php": ">=5.3.3",
+        "ext-mcrypt": "*",
         "fpoirotte/cryptal": "dev-master"
     },
     "provides": {

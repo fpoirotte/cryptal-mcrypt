@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d199defa20f78d919847ee2ce07e2b1",
+    "content-hash": "99ab7e3c39b5f99bbd481d996a6ff406",
     "packages": [
         {
             "name": "fpoirotte/cryptal",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fpoirotte/cryptal.git",
-                "reference": "fa1dccef59fa6bd269d497b86355e3cb9cff3242"
+                "reference": "cdc0652b53bf51c5b717a56c5a549c79e63b0c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/fa1dccef59fa6bd269d497b86355e3cb9cff3242",
-                "reference": "fa1dccef59fa6bd269d497b86355e3cb9cff3242",
+                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/cdc0652b53bf51c5b717a56c5a549c79e63b0c82",
+                "reference": "cdc0652b53bf51c5b717a56c5a549c79e63b0c82",
                 "shasum": ""
             },
             "require": {
@@ -56,12 +56,13 @@
             "description": "Cryptography Abstraction Layer",
             "homepage": "https://github.com/fpoirotte/cryptal",
             "keywords": [
+                "cryptal",
                 "crypto",
                 "cryptography",
                 "mcrypt",
                 "openssl"
             ],
-            "time": "2017-05-13 17:11:44"
+            "time": "2017-05-13 18:11:49"
         }
     ],
     "packages-dev": [
@@ -2491,7 +2492,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "ext-mcrypt": "*"
     },
     "platform-dev": []
 }

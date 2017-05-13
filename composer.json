@@ -1,0 +1,45 @@
+{
+    "prefer-stable": true,
+    "name": "fpoirotte/cryptal-mcrypt",
+    "description": "An implementation of the Cryptography Abstraction Layer based on mcrypt",
+    "keywords": ["cryptal", "crypto", "cryptography", "mcrypt"],
+    "homepage": "https://github.com/fpoirotte/cryptal-mcrypt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "François Poirotte",
+            "email": "clicky@erebot.net",
+            "role": "lead"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/fpoirotte/cryptal-mcrypt/issues",
+        "irc": "irc://irc.iiens.net/Clicky",
+        "source": "https://github.com/fpoirotte/cryptal-mcrypt"
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "fpoirotte/cryptal": "dev-master"
+    },
+    "provides": {
+        "fpoirotte/cryptal-implementation": "*"
+    },
+    "require-dev": {
+        "phpmd/phpmd": "*",
+        "sebastian/phpcpd": "*",
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "erebot/buildenv": "^1.4.0",
+        "fpoirotte/natives4doxygen": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "fpoirotte\\Cryptal\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "1.0.x-dev"
+        }
+    }
+}

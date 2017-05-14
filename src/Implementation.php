@@ -84,24 +84,6 @@ class Implementation implements CryptoInterface
         static::$supportedModes = $res;
     }
 
-    public static function getSupportedCiphers()
-    {
-        if (static::$supportedCiphers === null) {
-            self::checkSupport();
-        }
-
-        return array_keys(static::$supportedCiphers);
-    }
-
-    public static function getModes()
-    {
-        if (static::$supportedModes === null) {
-            self::checkSupport();
-        }
-
-        return array_keys(static::$supportedModes);
-    }
-
     public function encrypt($iv, $key, $data, &$tag = null, $aad = '')
     {
         $blockSize  = $this->getBlockSize();

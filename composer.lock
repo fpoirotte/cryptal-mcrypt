@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "99ab7e3c39b5f99bbd481d996a6ff406",
+    "content-hash": "a99281df76553091b6758cadba9b94c0",
     "packages": [
         {
             "name": "fpoirotte/cryptal",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fpoirotte/cryptal.git",
-                "reference": "b081049b8918c34dfbabb0f9266e7a1586bc9b76"
+                "reference": "876aa9f9bc61e398e4bebddf16e6c086475ce8be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/b081049b8918c34dfbabb0f9266e7a1586bc9b76",
-                "reference": "b081049b8918c34dfbabb0f9266e7a1586bc9b76",
+                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/876aa9f9bc61e398e4bebddf16e6c086475ce8be",
+                "reference": "876aa9f9bc61e398e4bebddf16e6c086475ce8be",
                 "shasum": ""
             },
             "require": {
@@ -25,7 +25,6 @@
             },
             "require-dev": {
                 "erebot/buildenv": "^1.4.0",
-                "fpoirotte/natives4doxygen": "*",
                 "phpmd/phpmd": "*",
                 "phpunit/phpunit": "*",
                 "sebastian/phpcpd": "*",
@@ -62,7 +61,7 @@
                 "mcrypt",
                 "openssl"
             ],
-            "time": "2017-05-14 00:14:30"
+            "time": "2017-05-14 12:23:51"
         }
     ],
     "packages-dev": [
@@ -2492,7 +2491,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.3.3",
+        "php": ">=5.3.0 <7.2.0",
         "ext-mcrypt": "*"
     },
     "platform-dev": []

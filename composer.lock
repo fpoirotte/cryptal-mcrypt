@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a99281df76553091b6758cadba9b94c0",
+    "content-hash": "93f98ab85cd12eddad6f8ad033af927c",
     "packages": [
         {
             "name": "fpoirotte/cryptal",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fpoirotte/cryptal.git",
-                "reference": "876aa9f9bc61e398e4bebddf16e6c086475ce8be"
+                "reference": "edb6ab8874fba4d4d3aee921edeb6b3e4d2dfe2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/876aa9f9bc61e398e4bebddf16e6c086475ce8be",
-                "reference": "876aa9f9bc61e398e4bebddf16e6c086475ce8be",
+                "url": "https://api.github.com/repos/fpoirotte/cryptal/zipball/edb6ab8874fba4d4d3aee921edeb6b3e4d2dfe2b",
+                "reference": "edb6ab8874fba4d4d3aee921edeb6b3e4d2dfe2b",
                 "shasum": ""
             },
             "require": {
@@ -61,7 +61,7 @@
                 "mcrypt",
                 "openssl"
             ],
-            "time": "2017-05-14 12:23:51"
+            "time": "2017-05-14 16:46:52"
         }
     ],
     "packages-dev": [
@@ -167,48 +167,6 @@
                 "Erebot"
             ],
             "time": "2017-05-06T13:37:33+00:00"
-        },
-        {
-            "name": "fpoirotte/natives4doxygen",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fpoirotte/PHPNatives4Doxygen.git",
-                "reference": "608700ccb6428cf376ce837f30ba7db505ef6835"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fpoirotte/PHPNatives4Doxygen/zipball/608700ccb6428cf376ce837f30ba7db505ef6835",
-                "reference": "608700ccb6428cf376ce837f30ba7db505ef6835",
-                "shasum": ""
-            },
-            "require": {
-                "php": "*"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "François Poirotte",
-                    "email": "clicky@erebot.net",
-                    "role": "lead"
-                }
-            ],
-            "description": "Doxygen documentation for PHP's built-in classes and interfaces",
-            "homepage": "https://github.com/fpoirotte/PHPNatives4Doxygen",
-            "keywords": [
-                "documentation",
-                "doxygen"
-            ],
-            "time": "2014-11-02T13:27:25+00:00"
         },
         {
             "name": "myclabs/deep-copy",

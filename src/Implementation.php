@@ -18,7 +18,7 @@ class Implementation implements CryptoInterface
     public function __construct($cipher, $mode, PaddingInterface $padding, $tagLength = 16)
     {
         if (static::$supportedCiphers === null) {
-            self::checkSupport();
+            static::checkSupport();
         }
 
         if (!isset(static::$supportedCiphers[$cipher], static::$supportedModes[$mode])) {

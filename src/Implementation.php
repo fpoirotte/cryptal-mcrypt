@@ -68,6 +68,7 @@ class Implementation implements CryptoInterface
 
         // The PHP mcrypt extension does not define MCRYPT_MODE_CTR constant,
         // although the underlying library supports this mode.
+        // See also https://bugs.php.net/bug.php?id=66650.
         if (!defined('MCRYPT_MODE_CTR')) {
             define('MCRYPT_MODE_CTR', 'ctr');
         }

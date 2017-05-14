@@ -26,8 +26,6 @@
         "fpoirotte/cryptal-implementation": "0.0.0"
     },
     "require-dev": {
-        "phpmd/phpmd": "*",
-        "sebastian/phpcpd": "*",
         "phpunit/phpunit": "*",
         "squizlabs/php_codesniffer": "*",
         "erebot/buildenv": "^1.4.0"

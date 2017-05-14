@@ -66,11 +66,18 @@ class Implementation implements CryptoInterface
         }
         static::$supportedCiphers = $res;
 
+        // The PHP mcrypt extension does not define MCRYPT_MODE_CTR constant,
+        // although the underlying library supports this mode.
+        if (!defined('MCRYPT_MODE_CTR')) {
+            define('MCRYPT_MODE_CTR', 'ctr');
+        }
+
         // Now, build the list of supported modes.
         $candidates = array(
             CryptoInterface::MODE_ECB   => 'MCRYPT_MODE_ECB',
             CryptoInterface::MODE_CBC   => 'MCRYPT_MODE_CBC',
             CryptoInterface::MODE_CFB   => 'MCRYPT_MODE_CFB',
+            CryptoInterface::MODE_CTR   => 'MCRYPT_MODE_CTR',
             CryptoInterface::MODE_OFB   => 'MCRYPT_MODE_OFB',
         );
 

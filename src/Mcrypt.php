@@ -12,12 +12,12 @@ use fpoirotte\Cryptal\ImplementationTypeEnum;
 
 class Mcrypt implements CryptoInterface, PluginInterface
 {
-    protected   $cipherConst;
-    protected   $modeConst;
-    protected   $tagLength;
-    protected   $padding;
-    private     $key;
-    protected   $cipher;
+    protected $cipherConst;
+    protected $modeConst;
+    protected $tagLength;
+    protected $padding;
+    protected $cipher;
+    private $key;
 
     protected static $supportedCiphers = null;
     protected static $supportedModes = null;

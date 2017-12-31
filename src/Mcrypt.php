@@ -72,7 +72,7 @@ class Mcrypt implements CryptoInterface, PluginInterface
         );
 
         $res = array();
-        $supported = @mcrypt_list_algorithms();
+        $supported = function_exists('mcrypt_list_algorithms') ? @mcrypt_list_algorithms() : array();
         foreach ($candidates as $key => $value) {
             if (defined($value) && in_array(constant($value), $supported)) {
                 $res["$key"] = constant($value);
@@ -90,7 +90,7 @@ class Mcrypt implements CryptoInterface, PluginInterface
         );
 
         $res = array();
-        $supported = @mcrypt_list_modes();
+        $supported = function_exists('mcrypt_list_modes') ? @mcrypt_list_modes() : array();
         foreach ($candidates as $key => $value) {
             if (in_array($value, $supported)) {
                 $res[$key] = $value;
